@@ -1,6 +1,4 @@
-Certainly! Below is a basic template for a README file that you can use for your full-stack project showcasing user login, signup, logout functionality with contact us using React, Express, JSON Web Token (jsonwebtoken), bcrypt, and cors. Please customize it according to your project structure and requirements.
 
----
 
 # Full-Stack User Authentication and Contact Form Project
 

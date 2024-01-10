@@ -1,0 +1,4 @@
+xenonstack-backend-main/node_modules
+xenonstack-frontend-main/node_modules
+
+xenonstack-backend-main/config/.env

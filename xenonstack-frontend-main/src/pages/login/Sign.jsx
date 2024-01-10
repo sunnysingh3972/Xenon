@@ -4,6 +4,8 @@ import axios from 'axios';
 import Navbar from '../../components/navbar/Navbar'
 import {jwtDecode} from 'jwt-decode';
 import {useNavigate} from 'react-router-dom'
+import toast from "react-hot-toast";
+
 
 const Sign = ({setUser})=>{
     const navigate = useNavigate();
@@ -23,12 +25,14 @@ const Sign = ({setUser})=>{
     const handleSubmit = (e)=>{
         e.preventDefault();
         if(!signUpInfo.name || !signUpInfo.email || !signUpInfo.password || !signUpInfo.cpassword){
-            setErrMsg("fill all fields !!")
+            // setErrMsg("fill all fields !!")
+            toast.error("fill all fiedls !!");
             console.log("user",signUpInfo);
             return;
         }
         if(signUpInfo.password!==signUpInfo.cpassword){
-            setErrMsg("password and confirm password should be same !!")
+            // setErrMsg("password and confirm password should be same !!")
+            toast.error("password and confirm password should be same !!");
             console.log("user",signUpInfo);
             return;
         }
@@ -57,21 +61,22 @@ const Sign = ({setUser})=>{
     const handleLoginSubmit = (e)=>{
         e.preventDefault();
         if(!inUser.email || !inUser.password){
-            setErrMsg("fill the the fields!!");
+            // setErrMsg("fill the the fields!!");
+            toast.error("fill the the fields!!");
         }
         console.log("inuser",inUser);
         axios.post('http://localhost:8000/api/user/login',inUser)
         .then(res =>{
             console.log(res);
-            alert(res.data.message);
+            // alert(res.data.message);
+            toast.success(res.data.message);
             if(res.data.token){
                 const token = res.data.token;
                 const user = jwtDecode(token);
                 console.log(user);
                 setUser(user);
                 navigate("/sign");
-            }
-           
+            }          
             
         });
     }

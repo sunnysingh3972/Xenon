@@ -10,8 +10,11 @@ const app = express();
 const port = process.env.PORT
 const DATABASE_URL = process.env.DATABASE_URL
 
-// cors policy
-app.use(cors())
+app.use(cors({
+    origin : process.env.FRONTEND,
+    methods:["GET","POST","PUT","DELETE"],
+    credentials:true
+}))
 
 // connect database
 connectDB(DATABASE_URL)

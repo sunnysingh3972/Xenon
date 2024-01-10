@@ -127,3 +127,15 @@ The frontend is built with React and communicates with the backend using RESTful
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
+## Screenshots
+![image](https://github.com/sunnysingh3972/Xenon/assets/76744031/3e6646cd-be9e-4009-97b4-e144d8d71595)
+![image](https://github.com/sunnysingh3972/Xenon/assets/76744031/0360cce8-adde-48c1-afb0-d2d7c0e6180c)
+![image](https://github.com/sunnysingh3972/Xenon/assets/76744031/7b6e299c-539b-4b4f-aa4d-a922643aa549)
+**screenshot of database**
+![image](https://github.com/sunnysingh3972/Xenon/assets/76744031/1a1ae71f-bc5b-45e9-8e69-f6d368c2e903)
+![image](https://github.com/sunnysingh3972/Xenon/assets/76744031/69e64542-ab78-4340-b979-23bb01eb641f)
+
+
+
+
+

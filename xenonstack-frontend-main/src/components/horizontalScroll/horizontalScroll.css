@@ -1,0 +1,94 @@
+.scroll__container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.scroll__header{
+    display: flex;
+    justify-content: space-between;
+}
+.scroll__header a{
+    text-decoration: none;
+    color:#2ea3f2;
+    font-size: 18px;
+    font-weight: 500;
+}
+.scroll__header .title{
+    font-weight: 700;
+    font-size: 20px;
+}
+.scroll__list{
+    overflow: scroll;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.scroll__list::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.scroll__list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.scroll__item{
+    width: 400px;
+    padding: 15px 25 px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+.scroll__item .header{
+    display: flex;
+    position: relative;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.scroll__item .heading h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.scroll__item .logo{
+    width: 55px;
+    height: 55px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+}
+.scroll__item .body{
+    margin-left: 60px;
+}
+.scroll__item .bookmark{
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    color: #2ea3f2;
+}
+.scroll__item .info{
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+}
+.scroll__item .tags{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.scroll__item .tags span{
+    margin-right: 10px;
+    padding: 7px 10px;
+    border: 1px solid rgb(177, 177, 177);
+    color: gray;
+    border-radius: 15px;
+}
+.view__details{
+    text-decoration: none;
+    font-weight: 500;
+    color: #2ea3f2;
+}
+.view__details span{
+    position: relative;
+    top: 2px;
+}

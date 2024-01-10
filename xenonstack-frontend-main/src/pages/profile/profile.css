@@ -1,0 +1,22 @@
+
+.profile{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.logout{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.profileData{
+    padding-top: 250px;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}

@@ -1,0 +1,53 @@
+.navbar{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(181, 181, 181);
+}
+.navbar a{
+    text-decoration: none;
+    /* color: #2ea3f2; */
+    color: black;
+    font-weight: 500;
+}
+.navbar .logo{
+    height: 50px;
+}
+.searchbar{
+    position: relative;
+}
+.searchbar__icon{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.searchbar input{
+    padding: 8px 10px 8px 40px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 18px;
+    border: 1px solid #2ea3f2;
+    box-shadow: 0 2px 4px rgb(211, 211, 211);
+}
+.notification__icon{
+    font-size: 25px;
+    font-weight: 700;
+    color: #2ea3f2;
+}
+
+.profilePic img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.profilePic{
+    text-transform: capitalize;
+}
+/* .active{
+    color: #2ea3f2;
+} */

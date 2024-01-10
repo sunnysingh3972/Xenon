@@ -1,0 +1,187 @@
+"apple": "I am a red fruit"
+1 : "this is a number"
+
+// document are seperated by ---
+---
+#lists
+- apple
+- mango
+- banana
+- Apple
+
+// blocks are created using intentation (spaces not tabs)
+---
+cities: 
+ - new delhi
+ - mumbai
+ - gujrat
+
+ // or
+
+cities : [new delhi, mumbai, gujrat]
+
+
+json format -> 
+{
+  "cities": [
+    "new delhi",
+    "mumbai",
+    "gujrat"
+  ]
+}
+
+{mango: "yello fruit", age: 56}
+json format ->
+{"mango": "yello fruit", "age": 56}
+...
+// document end is reperesented by ...
+
+
+# String variables
+myself: Kunal Kushwaha
+fruit: "apple"
+job: 'swe'
+
+# write multiline message
+bio: |
+hey my name is Bhanu Prakash
+I am a very nice dude.
+
+# write a single line in multiple line
+message: >
+this will 
+all be 
+in one single line
+
+# Specifying datatypes in YAML
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!-45
+binaryNum: !!int 06574
+hexa: !!int 0x45
+commaValues: !!int +540_000 #540,000
+
+# floating point numbers
+marks: !!float 56.89
+infinity: !!float .inf
+not a num: .negativeNum
+
+booleanValue: !!bool No # n, N, false, False, FALSE
+message: !!str this is a message
+
+#null
+surname: !!null Null # null NULL ~
+
+# date and time
+date: !!timestamp 2002-12-14
+india time: 2001-12-15T02:59:43.10 +5:30
+
+# sequence datatypes
+student: !!seq
+ - marks
+ - name
+ - roll_no
+
+# key: value pairs are called maps
+!!map
+
+# like this also
+cities: [new delhi, mumbai]
+
+#some of the keys of the deq will be empty
+# sparse seq
+sparse seq:
+ - hey
+ - how
+ -
+ - Null
+ - sup 
+ 
+ // nested sequence
+ -
+  - mango
+  - apple
+  - banana
+-
+ - marks
+ - roll num
+ - date
+
+// json format
+[
+  [
+    "marks",
+    "roll num",
+    "date"
+  ],
+  [
+    "marks",
+    "roll no",
+    "class"
+  ]
+]
+
+# nested mapping
+name: Bhanu Prakash
+role:
+ age: 21
+ job: student
+
+# same as
+name: bhanu Prakash
+role: {age: 78, job: student}
+
+# pairs: key may have dupicate values
+# !!pairs
+pair example: !!pairs
+ - job: student
+ - job: teacher
+
+# same as
+pair example: !!pairs [job: student, job: teacher]
+# set
+names: !!set
+? Bhanu
+? Raj
+? Gaurav
+
+#dicrionary !!omap
+people: !!omap
+ - kunal:
+    name: Kunal
+    age: 21
+    height: 678
+ - Rahul:
+    name: Rahul
+    age: 45
+    height: 87
+
+# reusing some properties using anchors
+likings: &likes
+  fav fruint: mango
+  dislikes: grapes
+
+person:
+  name: Bhanu Prakash
+  fav fruit: mango
+  dislikes: grapes
+
+person2:
+  name: Bhanu
+  <<: *likes
+
+person3:
+  name: Bhanu
+  <<: *likes
+  dislikes: berries
+
+
+
+
+services:
+  mywebapp:
+    build: ./
+    port:
+      -8080:3000
+    container_name: 'mywebapp'
+    

@@ -1,0 +1,14 @@
+{
+    "School": {
+        "name": "PS",
+        "principle": "Someone",
+        "Students": [
+            {
+                "rno": 12,
+                "name": "Bhanu",
+                "age": 21,
+                "marks": 88
+            }
+        ]
+    }
+}
